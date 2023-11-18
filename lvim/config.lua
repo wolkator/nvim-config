@@ -8,17 +8,15 @@ lvim.plugins = {
     { "szw/vim-maximizer" },
     { "mbbill/undotree" },
     { "catppuccin/nvim" },
-    { "navarasu/onedark.nvim" },
     { "christoomey/vim-tmux-navigator" },
 }
 
 require("lvim.lsp.null-ls.formatters").setup({ { exe = "black", filetypes = { "python" } } })
-require("lvim.lsp.manager").setup("matlab_ls", { single_file_support = true })
+-- require("lvim.lsp.manager").setup("matlab_ls", { single_file_support = true })
 vim.g.tmux_navigator_no_mappings = 1
 
 -- Options
 lvim.colorscheme = "catppuccin"
--- lvim.colorscheme = "onedark"
 
 lvim.format_on_save = true
 
